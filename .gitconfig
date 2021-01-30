@@ -1,6 +1,6 @@
 [user]
-  name = Jeff Geerling
-  email = geerlingguy@mac.com
+  name = Paul McDonough
+  email = paul.mcdonough@13fields.co.uk
 [core]
   editor = vi
   excludesfile = ~/.gitignore

@@ -1,0 +1,65 @@
+{
+	"name": "vscode-splunk-search-syntax",
+	"displayName": "Splunk Search Syntax Highlighter",
+	"description": "Syntax highlighting for Splunk SPL files",
+	"version": "1.2.7",
+	"publisher": "arcsector",
+	"engines": {
+		"vscode": "^1.41.0"
+	},
+	"categories": [
+		"Programming Languages",
+		"Snippets"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/arcsector/vscode-splunk-search-syntax.git"
+	},
+	"icon": "assets/icon.png",
+	"galleryBanner": {
+		"color": "#1e1e1e",
+		"theme": "dark"
+	},
+	"extensionPack": [
+		"arcsector.vscode-splunk-search-linter"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "splunk_search",
+				"aliases": [
+					"spl",
+					"SPL",
+					"splunk",
+					"splunk_search"
+				],
+				"configuration": "./language-configuration.json",
+				"extensions": [
+					".spl",
+					".splunk"
+				]
+			}
+		],
+		"grammars": [
+			{
+				"language": "splunk_search",
+				"scopeName": "source.splunk_search",
+				"path": "./syntaxes/splunk_search.tmLanguage",
+				"embeddedLanguages": {
+					"meta.embedded.block.sql": "sql"
+				}
+			}
+		],
+		"snippets": [
+			{
+				"language": "splunk_search",
+				"path": "./snippets/splunk_search_snippets.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "1938b0e4-e8ca-4c73-b10a-cd715816a50c",
+		"publisherId": "ec8aa3bb-c55d-4e99-ad21-5621f095da29",
+		"publisherDisplayName": "arcsector"
+	}
+}
